@@ -4,14 +4,11 @@ using System.Text;
 
 namespace prova
 {
-    class Gallina : Animale
+    class Maiale : Animale
     {
         public override void FaiILTuoVerso()
         {
-            Zampe = 2;
-            Occhi = 3;
-            occhi = 3;
-            Console.WriteLine("coccode");
+            Console.WriteLine("oink");
         }
     }
 }

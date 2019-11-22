@@ -6,38 +6,24 @@ namespace prova
     {
         static void Main(string[] args)
         {
-            Gatto gatto = new Gatto();
 
-            Cane cane = new Cane();
+            Gatto g = new Gatto();
 
-            gatto.DiIlTuoNome();
+            g.Zampe = 7;
 
-            cane.DiIlTuoNome();
+            g.occhi = 2;
 
-            gatto.FaiILTuoVerso();
-
-            cane.FaiILTuoVerso();
-
-            Mucca carolina = new Mucca();
-
-            Animale[] animali = { gatto, cane, carolina, new Gallina() };
+            Animale[] animali = { new Gatto(), new Cane(), new Mucca() , new Gallina(), new Maiale() };
 
             foreach (Animale animale in animali)
             {
                 animale.FaiILTuoVerso();
-
             }
 
 
-            Gatto nuovoGatto = (Gatto)animali[0];
 
-            
 
-            Animale animale0 = animali[0];
 
-            nuovoGatto.FaiILTuoVerso();
-
-            animale0.FaiILTuoVerso();
 
 
 
